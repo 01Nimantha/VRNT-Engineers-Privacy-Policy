@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Privacy Policy — VRNT Engineers | Construction Invoicing App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(145deg, #eef2f5 0%, #d9e2e8 100%);
+      color: #1a2c3e;
+      line-height: 1.55;
+      scroll-behavior: smooth;
+    }
+
+    /* header styling — construction/industrial vibe */
+    .hero {
+      background: linear-gradient(112deg, #0b2b26 0%, #123e3a 100%);
+      border-bottom: 4px solid #f5b042;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 12px 20px -12px rgba(0,0,0,0.25);
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .hero-icon {
+      background: #f5b04220;
+      border-radius: 60px;
+      padding: 12px;
+      backdrop-filter: blur(2px);
+    }
+
+    .hero-icon svg {
+      width: 56px;
+      height: 56px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      background: linear-gradient(135deg, #ffffff, #f5e6c4);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .hero p {
+      color: #cdede8;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    .badge {
+      background: #f5b042;
+      color: #1e2f2c;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* main container */
+    .container {
+      max-width: 1280px;
+      margin: 2.5rem auto;
+      padding: 0 24px;
+    }
+
+    .policy-card {
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      backdrop-filter: blur(0px);
+      transition: all 0.2s ease;
+    }
+
+    .policy-inner {
+      padding: 2.2rem 2rem;
+    }
+
+    /* effective & intro */
+    .effective-box {
+      background: #f8fafc;
+      border-left: 6px solid #f5b042;
+      padding: 1.2rem 1.6rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      font-weight: 500;
+      color: #1e3a3a;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin: 1.8rem 0 0.8rem 0;
+      color: #0f3b36;
+      border-bottom: 2px solid #e9ecef;
+      padding-bottom: 0.4rem;
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem 0;
+      color: #2c5a52;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p, li {
+      color: #2c3e44;
+      margin-bottom: 0.65rem;
+    }
+
+    .data-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .data-card {
+      background: #f9f9fb;
+      border-radius: 20px;
+      padding: 1rem 1.3rem;
+      flex: 1 1 220px;
+      border: 1px solid #e4e9f0;
+    }
+
+    .data-card strong {
+      color: #b45f1b;
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    ul, .list-styled {
+      padding-left: 1.6rem;
+      margin: 0.8rem 0;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    .tech-badge {
+      background: #eef2f5;
+      display: inline-block;
+      padding: 0.2rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 0.2rem 0.4rem 0.2rem 0;
+      color: #1f5e53;
+    }
+
+    .contact-block {
+      background: #f3f6f9;
+      border-radius: 24px;
+      padding: 1.5rem;
+      margin: 2rem 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.2rem;
+    }
+
+    .developer {
+      background: white;
+      border-radius: 20px;
+      padding: 0.8rem 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      border: 1px solid #e2e8f0;
+    }
+
+    footer {
+      background: #0e2a26;
+      color: #bfddd8;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      border-top: 3px solid #f5b042;
+    }
+
+    footer a {
+      color: #f5d98f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a {
+      color: #e68a2e;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #c26d1a;
+    }
+
+    hr {
+      margin: 1.5rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #ccc, transparent);
+    }
+
+    @media (max-width: 700px) {
+      .policy-inner {
+        padding: 1.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 8H19M5 12H19M5 16H12M15 16L19 16M20 3H4C2.89543 3 2 3.89543 2 5V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V5C22 3.89543 21.1046 3 20 3Z" stroke="#F5B042" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M8 7H16" stroke="#F5B042" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="17.5" cy="17.5" r="2.5" stroke="#F5B042" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div>
+        <h1>VRNT Engineers · Privacy Policy</h1>
+        <p>Construction invoicing & management — transparent, secure, professional.</p>
+        <div class="badge">🔐 Built with privacy-first approach</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="policy-card">
+      <div class="policy-inner">
+        <div class="effective-box">
+          📅 <strong>Effective Date:</strong> May 2, 2026<br>
+          📱 <strong>App version:</strong> 1.0+ | Flutter (Android & iOS)<br>
+          👷‍♂️ <strong>Last updated:</strong> May 2, 2026
+        </div>
+
+        <p><strong>VRNT Engineers</strong> (developed by <strong>P.V. Nimantha Madhushan</strong> & <strong>P.V. Ruwantha Madhushan</strong>) provides a construction invoicing and job management mobile application. This Privacy Policy describes how we handle your information when you use the app. By using VRNT Engineers, you agree to the practices outlined here.</p>
+
+        <!-- 1. Information we collect -->
+        <h2>📋 1. Information We Collect</h2>
+        <p>To deliver the invoicing & management features, VRNT Engineers collects the following categories:</p>
+        <div class="data-grid">
+          <div class="data-card"><strong>🔐 Account Data</strong> Email address & password (used for secure authentication).</div>
+          <div class="data-card"><strong>👤 Profile Data</strong> Optional profile picture — stored securely and visible only to you.</div>
+          <div class="data-card"><strong>🏦 Business/Financial Data</strong> Bank account details (Account Name, Account Number, Bank Name, Branch) inserted by users to embed into invoices.</div>
+          <div class="data-card"><strong>📇 Client & Job Data</strong> Client names, phone numbers, job categories (Roof, Custom, etc.), cost calculations, calendar history and invoice details.</div>
+        </div>
+
+        <h2>📲 2. Device Permissions Required</h2>
+        <ul>
+          <li><strong>Storage / Files</strong> — to save generated PDF invoices directly on your device.</li>
+          <li><strong>Camera / Photo Library</strong> — to allow you to upload a profile picture (optional).</li>
+          <li><strong>Internet / Network</strong> — required to synchronize data with our backend (Supabase) and enable authentication.</li>
+        </ul>
+        <p>You can change permission settings anytime from your mobile device settings, but some features may be limited.</p>
+
+        <h2>⚙️ 3. Third-Party Services & Technologies</h2>
+        <p>We rely on trusted services to provide robust functionality:</p>
+        <div>
+          <span class="tech-badge">Supabase</span> — user authentication (secure email/password login) & real-time database. All synced data is stored on encrypted Supabase cloud servers.
+          <span class="tech-badge">Hive (local storage)</span> — lightweight NoSQL database to store price settings, custom categories, and bank details locally for offline access and faster performance.
+          <span class="tech-badge">Share Plus</span> — enables exporting and sharing PDF invoices to external apps (WhatsApp, email, etc.) directly from the app.
+          <span class="tech-badge">PDF generation (local)</span> — all invoices are generated natively on-device; no invoice data is sent to external print servers.
+        </div>
+        <p>🔹 <strong>No advertising networks, analytics SDKs, or data brokers are integrated.</strong> Your data remains under your control and our limited backend scope.</p>
+
+        <h2>🎯 4. How We Use Your Information</h2>
+        <ul>
+          <li>✓ Provide, maintain, and improve invoicing functionality (creating, editing, and sharing invoices).</li>
+          <li>✓ Enable secure login and cross-device data access (sync via Supabase).</li>
+          <li>✓ Generate professional PDF invoices with your company and client details.</li>
+          <li>✓ Store preferences locally (categories, price defaults) for offline productivity.</li>
+          <li>✓ We <strong>do not sell, rent, or trade</strong> any personal data, client data, or financial information to third parties.</li>
+        </ul>
+
+        <h2>🔒 5. Data Storage & Security</h2>
+        <p>We implement reasonable security measures to protect your information:</p>
+        <ul>
+          <li><strong>Authentication:</strong> Supabase handles authentication with hashed passwords and secure session tokens.</li>
+          <li><strong>Encryption in transit:</strong> All communication between the app and Supabase uses TLS/SSL encryption.</li>
+          <li><strong>Local storage:</strong> Hive boxes are stored inside the app's private directory; inaccessible to other apps.</li>
+          <li><strong>Data retention:</strong> You can edit or delete any client/job data at any time. If you delete your account, all related data is permanently removed from our servers within 30 days.</li>
+          <li>While we strive to protect your data, no method of transmission over the Internet is 100% secure. We encourage you to use strong passwords and keep your device updated.</li>
+        </ul>
+
+        <h2>👥 6. User Rights & Control</h2>
+        <p>As a user of VRNT Engineers, you have the following rights:</p>
+        <ul>
+          <li><strong>Access & Portability:</strong> Request a copy of your stored data (email us).</li>
+          <li><strong>Correction:</strong> Edit your profile, bank details, or client info inside the app at any time.</li>
+          <li><strong>Deletion:</strong> Delete individual invoices, clients, or your entire account via settings.</li>
+          <li><strong>Opt-out of optional data:</strong> Profile picture is strictly optional; you can remove it any time.</li>
+          <li>To exercise rights, contact <a href="mailto:01nimantha@gmail.com">01nimantha@gmail.com</a> or <a href="mailto:01ruwantha@gmail.com">01ruwantha@gmail.com</a>.</li>
+        </ul>
+
+        <h2>🧸 7. Children’s Privacy</h2>
+        <p>VRNT Engineers is not directed toward individuals under the age of 16. We do not knowingly collect personal information from children. If you believe we have inadvertently collected data from a minor, please contact us immediately, and we will take steps to delete such information.</p>
+
+        <h2>📝 8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make changes, we will revise the "Effective Date" at the top of this policy. We encourage you to review this page periodically. For significant updates, we may notify you via in-app notice or email (if available). Your continued use of the app after changes constitutes acceptance of the revised policy.</p>
+
+        <h2>📬 9. Contact Information & Developer Details</h2>
+        <div class="contact-block">
+          <div>
+            <p style="font-weight: 700; margin-bottom: 0.2rem;">👨‍💻 Lead Developer & Data Controller</p>
+            <div class="developer"><strong>P.V. Nimantha Madhushan</strong><br>📧 <a href="mailto:01nimantha@gmail.com">01nimantha@gmail.com</a></div>
+          </div>
+          <div>
+            <p style="font-weight: 700; margin-bottom: 0.2rem;">👨‍💻 Co-Developer / Technical</p>
+            <div class="developer"><strong>P.V. Ruwantha Madhushan</strong><br>📧 <a href="mailto:01ruwantha@gmail.com">01ruwantha@gmail.com</a></div>
+          </div>
+        </div>
+        <p>If you have any questions, privacy concerns, or data requests, please reach out to either developer. We aim to respond within 7 business days.</p>
+
+        <h2>🌐 10. Data Sharing & Compliance</h2>
+        <p><strong>We do not share, sell, or disclose personal information to any third parties for marketing or unrelated purposes.</strong> Limited data access is provided only to core infrastructure (Supabase) under strict data processing agreements. Your clients’ information (names, phone numbers, job details) is only used to generate invoices that you initiate. No analytics or tracking frameworks are present. The app fully operates under applicable privacy laws including GDPR (for European users) and CCPA principles — you have the right to request data erasure.</p>
+
+        <hr>
+        <p style="font-size: 0.9rem; text-align: center; background: #fef9ef; border-radius: 28px; padding: 0.8rem;">📄 <strong>Summary</strong> — VRNT Engineers respects your privacy. All financial data, client details, and account information are used exclusively to provide construction invoicing services. You remain in full control.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2026 P.V. Nimantha Madhushan & P.V. Ruwantha Madhushan — VRNT Engineers</div>
+    <div style="margin-top: 10px;">📍 Construction Invoicing App · Privacy by Design | For support: <a href="mailto:01nimantha@gmail.com">01nimantha@gmail.com</a> / <a href="mailto:01ruwantha@gmail.com">01ruwantha@gmail.com</a></div>
+    <div style="margin-top: 12px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+      <span style="background:#1e3f3a; padding: 0.2rem 0.9rem; border-radius: 40px;">🔒 Supabase + Hive</span>
+      <span style="background:#1e3f3a; padding: 0.2rem 0.9rem; border-radius: 40px;">📄 PDF local generation</span>
+      <span style="background:#1e3f3a; padding: 0.2rem 0.9rem; border-radius: 40px;">🤝 Share Plus integration</span>
+    </div>
+  </footer>
+</body>
+</html>
